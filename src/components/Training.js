@@ -90,7 +90,7 @@ export default function Training() {
   };
 
   const fetchData = () => {
-    fetch("http://customerrest.herokuapp.com/api/trainings")
+    fetch("https://customerrest.herokuapp.com/api/trainings")
       .then(response => response.json())
       .then(data => setTrainings(data.content))
       .then(console.log("aaa: ", trainings));
