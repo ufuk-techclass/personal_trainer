@@ -99,7 +99,7 @@ export default function Customers() {
   };
 
   const fetchData = () => {
-    fetch("http://customerrest.herokuapp.com/api/customers")
+    fetch("https://customerrest.herokuapp.com/api/customers")
       .then(response => response.json())
       .then(data => setcustomers(data.content))
       .then(console.log("aaa: ", customers));
